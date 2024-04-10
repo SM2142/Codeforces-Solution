@@ -9,6 +9,11 @@ void solve()
     map<ll,ll>mp;
     string s,t;
     cin>>n>>a>>b;
+    if(n<2)
+    {
+        cout<<a<<endl;
+        return;
+    }
     if(a*2<=b)
     {
         cout<<a*n<<endl;
@@ -19,10 +24,7 @@ void solve()
         q=b/2;
         if(n%2)
         {
-
-        if(b%2)q++;
-        if(q<=a)p=p+q;
-        else p=p+a;
+            p=p+a;
         }
         cout<<p<<endl;
     }
