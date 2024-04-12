@@ -19,7 +19,7 @@ void solve()
    c=0;
    a=(k+1)/2;
    b=k/2;
-   if(p==k)
+   if(p<=k)
    {
        cout<<n<<endl;
        return;
